@@ -1,7 +1,10 @@
 @extends('layaouts.plantilla')
 
-@section('title', 'Cursos '.$curso)
+@section('title', 'Cursos '.$curso->name)
 
 @section('content')
-    <h1>Bienvenido al curso {{$curso}}</h1>
+    <h1>Bienvenido al curso {{$curso->name}}</h1>
+    <a href="{{route('cursos.index')}}">Volver a los demas cursos</a>
+    <p><strong>Categoria: </strong> {{$curso->categoria}}</p>
+    <p><strong>Descripcion: </strong>{{$curso->descripcion}}</p>
 @endsection
