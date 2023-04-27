@@ -24,6 +24,8 @@
             <br>
         @enderror
 
+        <input type="hidden" name="slug" value="slug">
+
         <label>
             Descripcion:
             <br> 
